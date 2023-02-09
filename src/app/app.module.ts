@@ -3,12 +3,34 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { DoctorsComponent } from './doctors/doctors.component';
-import { DoctordetailsComponent } from './doctordetails/doctordetails.component';
+import { HomeComponent } from './Pages/home/home.component';
+import { NavbarComponent } from './Shared/navbar/navbar.component';
+import { LoginComponent } from './Auth/login/login.component';
+import { RegisterComponent } from './Auth/register/register.component';
+import { DoctorsComponent } from './Pages/doctors/doctors.component';
+import { DoctordetailsComponent } from './Pages/doctordetails/doctordetails.component';
+import { LoaderComponent } from './Shared/loader/loader.component';
+import { TopbarComponent } from './Shared/topbar/topbar.component';
+import { GoTopComponent } from './Shared/go-top/go-top.component';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {HttpClientModule, HttpClient} from '@angular/common/http';
+import { FooterComponent } from './Shared/footer/footer.component';
+import { DoctorregisterComponent } from './Pages/doctorregister/doctorregister.component';
+import { RecoverypassComponent } from './Auth/recoverypass/recoverypass.component';
+import { NewpassComponent } from './Auth/newpass/newpass.component';
+import { MedicalreportsComponent } from './Pages/medicalreports/medicalreports.component';
+import { MeetourdoctorsComponent } from './Pages/meetourdoctors/meetourdoctors.component';
+import { ChatsComponent } from './Pages/chats/chats.component';
+import { MedicalAnalysisComponent } from './Pages/medical-analysis/medical-analysis.component';
+import { MedicalradiologyComponent } from './Pages/medicalradiology/medicalradiology.component';
+import { PaymentsComponent } from './Pages/payments/payments.component';
+import { ModalsuccessComponent } from './Shared/modalsuccess/modalsuccess.component';
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
+
 
 @NgModule({
   declarations: [
@@ -18,11 +40,34 @@ import { DoctordetailsComponent } from './doctordetails/doctordetails.component'
     LoginComponent,
     RegisterComponent,
     DoctorsComponent,
-    DoctordetailsComponent
+    DoctordetailsComponent,
+    LoaderComponent,
+    TopbarComponent,
+    GoTopComponent,
+    FooterComponent,
+    RecoverypassComponent,
+    DoctorregisterComponent,
+    NewpassComponent,
+    MedicalreportsComponent,
+    MeetourdoctorsComponent,
+    ChatsComponent,
+    MedicalAnalysisComponent,
+    MedicalradiologyComponent,
+    PaymentsComponent,
+    ModalsuccessComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    AppRoutingModule,
+    TranslateModule.forRoot({
+      defaultLanguage: 'en',
+      loader: {
+          provide: TranslateLoader,
+          useFactory: createTranslateLoader,
+          deps: [HttpClient]
+      }
+  })
   ],
   providers: [],
   bootstrap: [AppComponent]

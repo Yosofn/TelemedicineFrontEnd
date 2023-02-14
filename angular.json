@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "23d41164-26e1-4f32-a77c-84f1e6a13a9d"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -31,9 +34,40 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/meanmenu.css",
+              "node_modules/owl.carousel/dist/assets/owl.carousel.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "src/assets/css/owl.theme.default.min.css",
+              "src/assets/css/magnific-popup.css",
+              "src/assets/css/flaticon.css",
+              "src/assets/css/remixicon.css",
+              "src/assets/css/odometer.min.css",
+              "src/assets/css/aos.css",
+              "src/assets/css/main.css",
+              "src/assets/css/dark.css",
+              "src/assets/css/responsive.css",
+              "src/assets/css/zabuto_calendar.min.css",
+              "src/assets/css/jqueryscripttop.css",
+              "src/assets/css/timepicker.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/email-decode.min.js",
+              "src/assets/js/bootstrap.bundle.min.js",
+              "src/assets/js/jquery.meanmenu.js",
+              "node_modules/owl.carousel/dist/owl.carousel.min.js",
+              "src/assets/js/jquery.magnific-popup.js",
+              "src/assets/js/aos.js",
+              "src/assets/js/odometer.min.js",
+              "src/assets/js/appear.min.js",
+              "src/assets/js/form-validator.min.js",
+              "src/assets/js/contact-form-script.js",
+              "src/assets/js/ajaxchimp.min.js",
+              "src/assets/js/zabuto_calendar.min.js",
+              "src/assets/js/timepicker.min.js",
+              "src/assets/js/custom.js"
+            ]
           },
           "configurations": {
             "production": {

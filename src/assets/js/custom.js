@@ -324,6 +324,15 @@ function toggleTheme() {
         }
     });
   });
-  $(function () {
+
+
+  if("$.bs-timepicker"){
+    $(function () {
     $('.bs-timepicker').timepicker();
   });
+
+}
+
+$('.gender lanel').click(function(){
+  console.log(this);
+})

@@ -324,6 +324,18 @@ function toggleTheme() {
         }
     });
   });
+  $(document).ready(function () {
+    $("#demo-calendar-apppearance33").zabuto_calendar({
+      header_format: '[year]   [month]',
+      week_starts: 'sunday',
+      show_days: true,
+      today_markup: '<span class="badge bg-primary">[day]</span>',
+      navigation_markup: {
+          prev: '<i class="fas fa-chevron-left"></i>',
+          next: '<i class="fas fa-chevron-right"></i>'
+        }
+    });
+  });
 
 
   if("$.bs-timepicker"){

@@ -15,6 +15,8 @@ import { MedicalAnalysisComponent } from './Pages/medical-analysis/medical-analy
 import { MedicalradiologyComponent } from './Pages/medicalradiology/medicalradiology.component';
 import { PaymentsComponent } from './Pages/payments/payments.component';
 import { ModalsuccessComponent } from './Shared/modalsuccess/modalsuccess.component';
+import { GoTopComponent } from './Shared/go-top/go-top.component';
+import { NavbarComponent } from './Shared/navbar/navbar.component';
 
 const routes: Routes = [
   {path:'' , redirectTo:"home", pathMatch:"full"},
@@ -31,6 +33,12 @@ const routes: Routes = [
   {path:'registerdoctor' , component: DoctorregisterComponent},
   {path:'payments' , component: PaymentsComponent},
   {path:'success' , component: ModalsuccessComponent},
+  {path:'gototop' , component: GoTopComponent},
+  {path:'doctordetails' , component: DoctordetailsComponent},
+  {path:'Doctors' , component: DoctorsComponent},
+
+
+
 ];
 
 @NgModule({

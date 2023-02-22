@@ -15,7 +15,6 @@ import { GoTopComponent } from './Shared/go-top/go-top.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClientModule, HttpClient} from '@angular/common/http';
-import { FooterComponent } from './Shared/footer/footer.component';
 import { DoctorregisterComponent } from './Pages/doctorregister/doctorregister.component';
 import { RecoverypassComponent } from './Auth/recoverypass/recoverypass.component';
 import { NewpassComponent } from './Auth/newpass/newpass.component';
@@ -26,6 +25,7 @@ import { MedicalAnalysisComponent } from './Pages/medical-analysis/medical-analy
 import { MedicalradiologyComponent } from './Pages/medicalradiology/medicalradiology.component';
 import { PaymentsComponent } from './Pages/payments/payments.component';
 import { ModalsuccessComponent } from './Shared/modalsuccess/modalsuccess.component';
+import { FooterComponent } from './Shared/footer/footer.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');

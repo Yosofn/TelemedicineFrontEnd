@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "doctordetails.component.scss"
-    ],
-    "names": [],
-    "file": "doctordetails.component.css"
-}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"doctordetails.component.css"}

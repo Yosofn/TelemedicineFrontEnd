@@ -15,8 +15,18 @@ import { MedicalAnalysisComponent } from './Pages/medical-analysis/medical-analy
 import { MedicalradiologyComponent } from './Pages/medicalradiology/medicalradiology.component';
 import { PaymentsComponent } from './Pages/payments/payments.component';
 import { ModalsuccessComponent } from './Shared/modalsuccess/modalsuccess.component';
+
 import { GoTopComponent } from './Shared/go-top/go-top.component';
 import { NavbarComponent } from './Shared/navbar/navbar.component';
+
+import { ProfiledoctorComponent } from './Pages/profiledoctor/profiledoctor.component';
+import { MedicalrecordComponent } from './Pages/medicalrecord/medicalrecord.component';
+import { PatientListComponent } from './Pages/patient-list/patient-list.component';
+import { AppoimentListComponent } from './Pages/appoiment-list/appoiment-list.component';
+import { MyAppoimentRequestComponent } from './Pages/my-appoiment-request/my-appoiment-request.component';
+import { CongratsComponent } from './Pages/Modals/congrats/congrats.component';
+import { OppsComponent } from './Pages/Modals/opps/opps.component';
+
 
 const routes: Routes = [
   {path:'' , redirectTo:"home", pathMatch:"full"},
@@ -27,6 +37,7 @@ const routes: Routes = [
   {path:'home' , component: HomeComponent},
   {path:'medicalreports' , component: MedicalreportsComponent},
   {path:'meetourdoctors' , component: MeetourdoctorsComponent},
+  {path:'meet-our-doctors' , component: DoctorsComponent},
   {path:'chat' , component: ChatsComponent},
   {path:'medicalanalysis' , component: MedicalAnalysisComponent},
   {path:'medicalradiology' , component: MedicalradiologyComponent},
@@ -38,6 +49,15 @@ const routes: Routes = [
   {path:'Doctors' , component: DoctorsComponent},
 
 
+
+  {path:'Profiledoctor' , component: ProfiledoctorComponent},
+  {path:'medical-record' , component: MedicalrecordComponent},
+  {path:'patient-list-and-details' , component: PatientListComponent},
+  {path:'appoiment-list' , component: AppoimentListComponent},
+  {path:'my-appoiment-list' , component: MyAppoimentRequestComponent},
+  {path:'homedoctor' , component: DoctordetailsComponent},
+  {path:'congrats' , component: CongratsComponent},
+  {path:'opps' , component: OppsComponent},
 
 ];
 

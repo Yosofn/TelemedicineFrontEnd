@@ -17,37 +17,26 @@
   <div class="container-fluid">
   <nav class="navbar navbar-expand-md navbar-light">
   <a class="navbar-brand" href="#">
-  <!-- <img src="assets/images/logo.png" class="main-logo" alt="logo">
-  <img src="assets/images/white-logo.png" class="white-logo" alt="logo"> -->
+
   <span class="logo-tele">{{"TeleMedicine" | translate}}</span>
   </a>
   <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
   <ul class="navbar-nav m-auto">
   <li class="nav-item">
-  <a href="#" class="nav-link dropdown-toggle">
+  <a routerLink="/home" class="nav-link">
   {{"HOME" | translate}}
   </a>
   </li>
   <li class="nav-item">
-  <a href="#" class="nav-link">{{"AboutUs" | translate}}</a>
+  <a routerLink="/Profiledoctor" class="nav-link">{{"Profiledoctor" | translate}}</a>
   </li>
   <li class="nav-item">
-  <a href="#" class="nav-link dropdown-toggle">
-  {{"Services" | translate}}
+  <a routerLink="/registerdoctor" class="nav-link">
+  {{"registerdoctor" | translate}}
   </a>
   </li>
   <li class="nav-item">
-  <a href="#" class="nav-link dropdown-toggle active">
-  {{"Pages" | translate}}
-  </a>
-  </li>
-  <li class="nav-item">
-  <a href="#" class="nav-link dropdown-toggle">
-  {{"Blog" | translate}}
-  </a>
-  </li>
-  <li class="nav-item">
-  <a href="#" class="nav-link">{{"ContactUs" | translate}}</a>
+  <a  routerLink="/medicalreports"  class="nav-link">{{"medicalreports" | translate}}</a>
   </li>
   <li class="nav-item">
     <div class="language">
@@ -56,9 +45,9 @@
           <li class="parent-lang">
             <a href="javascript(void:0)" class="nav-link p-0 m-0">{{"MyAccount" | translate}}</a>
             <ul class="change-lang links">
-              <li><a href="#" class="">{{"AcountDetails" | translate}}</a></li>
-              <li><a href="#" class="">{{"MedicalRecord" | translate}}</a></li>
-              <li><a href="#" class="">{{"Favorit" | translate}}</a></li>
+              <li><a routerLink="/homedoctor" class="">{{"AcountDetails" | translate}}</a></li>
+              <li><a routerLink="/medicalradiology" class="">{{"medicalradiology" | translate}}</a></li>
+              <li><a routerLink="/meetourdoctors" class="">{{"meetourdoctors" | translate}}</a></li>
             </ul>
           </li>
       </ul>

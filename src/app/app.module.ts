@@ -25,7 +25,17 @@ import { MedicalAnalysisComponent } from './Pages/medical-analysis/medical-analy
 import { MedicalradiologyComponent } from './Pages/medicalradiology/medicalradiology.component';
 import { PaymentsComponent } from './Pages/payments/payments.component';
 import { ModalsuccessComponent } from './Shared/modalsuccess/modalsuccess.component';
+
 import { FooterComponent } from './Shared/footer/footer.component';
+
+import { ProfiledoctorComponent } from './Pages/profiledoctor/profiledoctor.component';
+import { MedicalrecordComponent } from './Pages/medicalrecord/medicalrecord.component';
+import { PatientListComponent } from './Pages/patient-list/patient-list.component';
+import { AppoimentListComponent } from './Pages/appoiment-list/appoiment-list.component';
+import { MyAppoimentRequestComponent } from './Pages/my-appoiment-request/my-appoiment-request.component';
+import { OppsComponent } from './Pages/Modals/opps/opps.component';
+import { CongratsComponent } from './Pages/Modals/congrats/congrats.component';
+
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -54,7 +64,14 @@ export function createTranslateLoader(http: HttpClient) {
     MedicalAnalysisComponent,
     MedicalradiologyComponent,
     PaymentsComponent,
-    ModalsuccessComponent
+    ModalsuccessComponent,
+    ProfiledoctorComponent,
+    MedicalrecordComponent,
+    PatientListComponent,
+    AppoimentListComponent,
+    MyAppoimentRequestComponent,
+    OppsComponent,
+    CongratsComponent
   ],
   imports: [
     BrowserModule,

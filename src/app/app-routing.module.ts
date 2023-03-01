@@ -47,10 +47,11 @@ const routes: Routes = [
   {path:'homedoctor' , component: DoctordetailsComponent},
   {path:'congrats' , component: CongratsComponent},
   {path:'opps' , component: OppsComponent},
+  {path:'app-my-appoiment-request' , component:MyAppoimentRequestComponent},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{useHash: false , scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

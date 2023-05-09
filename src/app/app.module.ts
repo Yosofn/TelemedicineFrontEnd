@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms'; // import the FormsModule
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,7 +16,7 @@ import { TopbarComponent } from './Shared/topbar/topbar.component';
 import { GoTopComponent } from './Shared/go-top/go-top.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {HttpClientModule, HttpClient} from '@angular/common/http';
+import {HttpClientModule, HttpClient,HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FooterComponent } from './Shared/footer/footer.component';
 import { DoctorregisterComponent } from './Pages/doctorregister/doctorregister.component';
 import { RecoverypassComponent } from './Auth/recoverypass/recoverypass.component';
@@ -33,6 +35,7 @@ import { AppoimentListComponent } from './Pages/appoiment-list/appoiment-list.co
 import { MyAppoimentRequestComponent } from './Pages/my-appoiment-request/my-appoiment-request.component';
 import { OppsComponent } from './Pages/Modals/opps/opps.component';
 import { CongratsComponent } from './Pages/Modals/congrats/congrats.component';
+import { HttpInterceptorService  } from './interceptor';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -68,12 +71,15 @@ export function createTranslateLoader(http: HttpClient) {
     AppoimentListComponent,
     MyAppoimentRequestComponent,
     OppsComponent,
-    CongratsComponent
+    CongratsComponent,
+    
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     TranslateModule.forRoot({
       defaultLanguage: 'en',
       loader: {

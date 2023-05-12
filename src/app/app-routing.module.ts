@@ -22,6 +22,8 @@ import { AppoimentListComponent } from './Pages/appoiment-list/appoiment-list.co
 import { MyAppoimentRequestComponent } from './Pages/my-appoiment-request/my-appoiment-request.component';
 import { CongratsComponent } from './Pages/Modals/congrats/congrats.component';
 import { OppsComponent } from './Pages/Modals/opps/opps.component';
+import { DashboardComponent } from './Admin/dashboard/dashboard.component';
+import { QuickRegisterComponent } from './Auth/quick-register/quick-register.component';
 
 const routes: Routes = [
   {path:'' , redirectTo:"home", pathMatch:"full"},
@@ -48,6 +50,10 @@ const routes: Routes = [
   {path:'congrats' , component: CongratsComponent},
   {path:'opps' , component: OppsComponent},
   {path:'app-my-appoiment-request' , component:MyAppoimentRequestComponent},
+  {path:'dashboard' , component:DashboardComponent},
+  {path:'qickregister' , component:QuickRegisterComponent},
+
+
 ];
 
 @NgModule({

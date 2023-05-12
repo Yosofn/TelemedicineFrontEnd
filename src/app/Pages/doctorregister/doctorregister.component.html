@@ -1,125 +1,81 @@
 
-<div class="page-banner bg-1 ptb-100">
-  <div class="container py-0 m-0">
+<div class="page-banner py-0  m-0 bg-1">
+  <div class="container  ">
   <div class="row align-items-center">
-  <div class="col-lg-6 col-md-6">
+  <div class=" col-md-12">
   <div class="page-banner-content">
-  <h1>{{"register" | translate}}</h1>
-  <ul>
-  <li><a href="index.html">{{"HOME" | translate}}</a></li>
-  <li>{{"register" | translate}}</li>
-  </ul>
+    <div class="register-area pt-20 pb-70">
+      <div class="container">
+      <div class="register">
+      <h3>{{"Join our Team" | translate}}</h3>
+      <app-congrats *ngIf="showPopup"></app-congrats>
+
+      <form (ngSubmit)="SumbitApplication(register)">
+      <div class="row">
+      <div class="col-lg-6 col-md-6">
+      <div class="form-group">
+        <label class="label-form">{{"Education" | translate}}</label>
+      <textarea name="education" [(ngModel)]="register.education" type="text" id="name" class="form-control" placeholder="{{'Your Education' | translate}}*">
+      </textarea>
+      </div>
+      </div>
+   
+      <div class="col-lg-6">
+        <div class="form-group">
+          <label class="label-form">{{"Description" | translate}}</label>
+        <textarea name="description" [(ngModel)]="register.description" type="text" id="Description" class="form-control" placeholder="{{'Description' | translate}}*">
+        </textarea>
+        </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6">
+          <div class="form-group">
+            <label class="label-form">{{"Experience " | translate}}</label>
+          <textarea name="experience" [(ngModel)]="register.experience" type="text" id="Experience" class="form-control" placeholder="{{'Experience' | translate}}*">
+            </textarea>
+          </div>
+          </div>
+  
+        <div class="col-lg-6">
+          <label class="label-form">{{"Sepcialzation " | translate}}</label>
+
+          <select  name="specialization" [(ngModel)]="register.sepcialzation">
+            <option *ngFor="let s of sepcialzation" [value]="s">{{s}}</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <div class="row">
+          
+            <div class="col-lg-4">
+              <label class="label-form">{{"CV" | translate}}</label>
+              <label for="CV" class="input-file-upload">
+                <p>{{"upload your cv" | translate}}</p> <i class="fa-solid fa-cloud-arrow-up"></i>
+                <input class="d-none" type="file" name="CV" id="CV">
+              </label>
+            </div>
+        
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="default-btn btn active">{{"Join Our Team" | translate}}</button>
+      </form>
+      </div>
+      </div>
+    
+      </div>
   </div>
   </div>
-  <div class="col-lg-6 col-md-6">
+  <!-- <div class="col-lg-6 col-md-6">
   <div class="page-banner-img">
   <img src="assets/images/page-header/page-header-img-2.png" alt="Image">
   </div>
-  </div>
+  </div> -->
   </div>
   </div>
   </div>
 
 
-  <div class="register-area pt-100 pb-70">
-  <div class="container">
-  <div class="register">
-  <h3>{{"registerAsAdoctor" | translate}}</h3>
-  <form>
-  <div class="row">
-  <div class="col-lg-6 col-md-6">
-  <div class="form-group">
-    <label class="label-form">{{"fName" | translate}}</label>
-  <input type="text" id="name" class="form-control" placeholder="{{'fName' | translate}}*">
-  </div>
-  </div>
-  <div class="col-lg-6 col-md-6">
-  <div class="form-group">
-    <label class="label-form">{{"lName" | translate}}</label>
-  <input type="text" id="lname" class="form-control" placeholder="{{'lName' | translate}}*">
-  </div>
-  </div>
-  <div class="col-lg-6">
-    <div class="form-group">
-      <label class="label-form">{{"address" | translate}}</label>
-    <input type="text" id="address" class="form-control" placeholder="{{'address' | translate}}*">
-    </div>
-    </div>
-    <div class="col-lg-6">
-      <div class="form-group">
-        <label class="label-form">{{"gender" | translate}}</label>
-          <div class="gender-form">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="gender" id="male">
-              <label class="form-check-label" for="male">
-                {{"male" | translate}}
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="gender" id="female">
-              <label class="form-check-label" for="female">
-                {{"female" | translate}}
-              </label>
-            </div>
-          </div>
-      </div>
-      </div>
-  <div class="col-lg-6">
-  <div class="form-group">
-    <label class="label-form">{{"password" | translate}}</label>
-  <input type="password" id="password" class="form-control" placeholder="{{'password' | translate}}*">
-  </div>
-  </div>
-  <div class="col-lg-6">
-  <div class="form-group">
-    <label class="label-form">{{"confirmPassword" | translate}}</label>
-  <input type="password" id="confirmPassword" class="form-control" placeholder="{{'confirmPassword' | translate}}*">
-  </div>
-  </div>
-  <div class="col-lg-6">
-    <div class="form-group">
-      <label class="label-form">{{"Email" | translate}}</label>
-    <input type="email" id="email" class="form-control" placeholder="{{'emailAddress' | translate}}*">
-    </div>
-    </div>
-    <div class="col-lg-6">
-      <div class="form-group">
-        <label class="label-form">{{"specialization" | translate}}</label>
-      <input type="text" id="specialization" class="form-control" placeholder="{{'specialization' | translate}}">
-      </div>
-    </div>
-    <div class="col-12">
-      <div class="row">
-        <div class="col-lg-4">
-          <label class="label-form">{{"education" | translate}}</label>
-          <label for="education" class="input-file-upload">
-            <p>{{"education" | translate}}</p> <i class="fa-solid fa-cloud-arrow-up"></i>
-            <input class="d-none" type="file" name="education" id="education">
-          </label>
-        </div>
-        <div class="col-lg-4">
-          <label class="label-form">{{"certification" | translate}}</label>
-          <label for="certification" class="input-file-upload">
-            <p>{{"certification" | translate}}</p> <i class="fa-solid fa-cloud-arrow-up"></i>
-            <input class="d-none" type="file" name="certification" id="certification">
-          </label>
-        </div>
-        <div class="col-lg-4">
-          <label class="label-form">{{"experience" | translate}}</label>
-          <label for="experience" class="input-file-upload">
-            <p>{{"experience" | translate}}</p> <i class="fa-solid fa-cloud-arrow-up"></i>
-            <input class="d-none" type="file" name="experience" id="experience">
-          </label>
-        </div>
-      </div>
-    </div>
-  </div>
-  <button type="submit" class="default-btn btn active">{{"register" | translate}}</button>
-  </form>
-  </div>
-  </div>
 
-  </div>
   
   <div class="register-area pt-100 pb-70">
     <div class="container">

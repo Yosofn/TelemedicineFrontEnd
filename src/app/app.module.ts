@@ -36,6 +36,8 @@ import { MyAppoimentRequestComponent } from './Pages/my-appoiment-request/my-app
 import { OppsComponent } from './Pages/Modals/opps/opps.component';
 import { CongratsComponent } from './Pages/Modals/congrats/congrats.component';
 import { HttpInterceptorService  } from './interceptor';
+import { QuickRegisterComponent } from './Auth/quick-register/quick-register.component';
+import { DashboardComponent } from './Admin/dashboard/dashboard.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -72,6 +74,8 @@ export function createTranslateLoader(http: HttpClient) {
     MyAppoimentRequestComponent,
     OppsComponent,
     CongratsComponent,
+    QuickRegisterComponent,
+    DashboardComponent,
     
   ],
   imports: [

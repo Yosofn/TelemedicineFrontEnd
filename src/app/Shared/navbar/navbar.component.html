@@ -29,9 +29,17 @@
     </li>
   
     <li class="nav-item">
-    <a routerLink="/registerdoctor" class="nav-link">
-    {{"Services" | translate}}
-    </a>
+      <ul class="p-0 m-0">
+        <li class="parent-lang">
+          <a href="javascript(void:0)" class="nav-link p-0 m-0">{{"Services" | translate}}</a>
+          <ul class="change-lang links">
+            <li><a routerLink="/meetourdoctors" class="">{{"Meet our doctors" | translate}}</a></li>
+
+            <li><a routerLink="/medicalanalysis" class="">{{"Medical Aalysis" | translate}}</a></li>
+            <li><a routerLink="/medicalradiology" class="">{{"Medical  Radiology" | translate}}</a></li>
+          </ul>
+        </li>
+    </ul>
     </li>
     <li class="nav-item">
       <a routerLink="/registerdoctor" class="nav-link">

@@ -5,36 +5,68 @@ import jwtDecode from 'jwt-decode';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment';
 import { Login } from '../Auth/interfaces/login';
+import { UserData } from '../Auth/interfaces/user-data';
+import { Register, quickRegister, registerDoctor } from '../Auth/interfaces/register';
 @Injectable({
   providedIn: 'root'
 })
 export class AuthenticationService {
-  userData=new BehaviorSubject(null);
-  basrurl=environment.url
+  loginform: Login = {
+    username: '',
+    password: ''
+  };  basrurl=environment.url
   constructor(private _httpClient :HttpClient ,private _Router:Router) { 
 
  
-      // Disable SSL certificate verification
-      // Only use this in development or trusted environments
-      // This disables all security checks
-      // Do not use in production
+  
     if (sessionStorage.getItem('Token') != null){
 
-      this.setUserData();
+      this.decodeInformation();
  
       }
   }
-  setUserData():void{
+  decodeInformation():any{
 
     let encodedToken =JSON.stringify( sessionStorage.getItem('Token'));
-    let decdodeToken:any =jwtDecode(encodedToken);
-    this.userData.next(decdodeToken);
+    let decodedToken  =jwtDecode(encodedToken);
+ 
+    return decodedToken;
+    
   }
 
-  login(userdata:Login):Observable<any>
+  login(login:Login):Observable<any>
   {
 
-return this._httpClient.post(this.basrurl + "Authentication/Login", userdata)
+return this._httpClient.post(this.basrurl + "Authentication/Login", login)
+
+  }
+
+  Register(register:Register):Observable<any>
+  {
+
+return this._httpClient.post(this.basrurl + "Authentication/Registration", register)
+
+  }
+
+  doctorRegister(register:registerDoctor):Observable<any>
+  {
+
+return this._httpClient.post(this.basrurl + "Authentication/JoinOurTeam", register)
+
+  }
+
+  quickRegister(register:quickRegister):Observable<any>
+  {
+
+return this._httpClient.post(this.basrurl + "Authentication/QuickRegister", register)
+
+  }
+
+
+  getUserData(userData:UserData):Observable<any>{
+
+    return this._httpClient.post(this.basrurl + "UserInformation/GetUserInformation", userData)
+
 
   }
 

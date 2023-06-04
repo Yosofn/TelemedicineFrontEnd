@@ -35,7 +35,6 @@ import { AppoimentListComponent } from './Pages/appoiment-list/appoiment-list.co
 import { MyAppoimentRequestComponent } from './Pages/my-appoiment-request/my-appoiment-request.component';
 import { OppsComponent } from './Pages/Modals/opps/opps.component';
 import { CongratsComponent } from './Pages/Modals/congrats/congrats.component';
-<<<<<<< HEAD
 import { PaymentAdminComponent } from './Pages/Admin/payment-admin/payment-admin.component';
 import { WidgetsAdminComponent } from './Pages/Admin/widgets-admin/widgets-admin.component';
 import { WiatingsAdminComponent } from './Pages/Admin/wiatings-admin/wiatings-admin.component';
@@ -48,11 +47,10 @@ import { RegisterationAdminComponent } from './Pages/Admin/registeration-admin/r
 import { OrderNewAdminComponent } from './Pages/Admin/order-new-admin/order-new-admin.component';
 import { ContactComponent } from './Pages/contact/contact.component';
 import { AboutOurCompanyComponent } from './Pages/about-our-company/about-our-company.component';
-=======
+
 import { HttpInterceptorService  } from './interceptor';
 import { QuickRegisterComponent } from './Auth/quick-register/quick-register.component';
 import { DashboardComponent } from './Admin/dashboard/dashboard.component';
->>>>>>> 17edb1770aa17bfc7ce5d00ea3057a00747a29be
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -89,7 +87,6 @@ export function createTranslateLoader(http: HttpClient) {
     MyAppoimentRequestComponent,
     OppsComponent,
     CongratsComponent,
-<<<<<<< HEAD
     PaymentAdminComponent,
     WidgetsAdminComponent,
     WiatingsAdminComponent,
@@ -101,12 +98,10 @@ export function createTranslateLoader(http: HttpClient) {
     RegisterationAdminComponent,
     OrderNewAdminComponent,
     ContactComponent,
-    AboutOurCompanyComponent
-=======
+    AboutOurCompanyComponent,
     QuickRegisterComponent,
     DashboardComponent,
-    
->>>>>>> 17edb1770aa17bfc7ce5d00ea3057a00747a29be
+  
   ],
   imports: [
     BrowserModule,

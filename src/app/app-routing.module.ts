@@ -66,8 +66,7 @@ const routes: Routes = [
   {path:'contacts' , component:ContactComponent},
   {path:'about-our-company' , component:AboutOurCompanyComponent},
   {path:'app-my-appoiment-request' , component:MyAppoimentRequestComponent},
-  {path:'dashboard' , component:DashboardComponent},
-  {path:'qickregister' , component:QuickRegisterComponent},
+
 
 
 ];

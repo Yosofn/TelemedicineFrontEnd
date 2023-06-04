@@ -30,6 +30,8 @@ import { RegisterationAdminComponent } from './Pages/Admin/registeration-admin/r
 import { OrderNewAdminComponent } from './Pages/Admin/order-new-admin/order-new-admin.component';
 import { ContactComponent } from './Pages/contact/contact.component';
 import { AboutOurCompanyComponent } from './Pages/about-our-company/about-our-company.component';
+import { DashboardComponent } from './Admin/dashboard/dashboard.component';
+import { QuickRegisterComponent } from './Auth/quick-register/quick-register.component';
 
 const routes: Routes = [
   {path:'' , redirectTo:"home", pathMatch:"full"},
@@ -63,6 +65,11 @@ const routes: Routes = [
   {path:'admin-register' , component:RegisterationAdminComponent},
   {path:'contacts' , component:ContactComponent},
   {path:'about-our-company' , component:AboutOurCompanyComponent},
+  {path:'app-my-appoiment-request' , component:MyAppoimentRequestComponent},
+  {path:'dashboard' , component:DashboardComponent},
+  {path:'qickregister' , component:QuickRegisterComponent},
+
+
 ];
 
 @NgModule({

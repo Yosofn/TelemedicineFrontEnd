@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms'; // import the FormsModule
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,7 +16,7 @@ import { TopbarComponent } from './Shared/topbar/topbar.component';
 import { GoTopComponent } from './Shared/go-top/go-top.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {HttpClientModule, HttpClient} from '@angular/common/http';
+import {HttpClientModule, HttpClient,HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FooterComponent } from './Shared/footer/footer.component';
 import { DoctorregisterComponent } from './Pages/doctorregister/doctorregister.component';
 import { RecoverypassComponent } from './Auth/recoverypass/recoverypass.component';
@@ -33,6 +35,7 @@ import { AppoimentListComponent } from './Pages/appoiment-list/appoiment-list.co
 import { MyAppoimentRequestComponent } from './Pages/my-appoiment-request/my-appoiment-request.component';
 import { OppsComponent } from './Pages/Modals/opps/opps.component';
 import { CongratsComponent } from './Pages/Modals/congrats/congrats.component';
+<<<<<<< HEAD
 import { PaymentAdminComponent } from './Pages/Admin/payment-admin/payment-admin.component';
 import { WidgetsAdminComponent } from './Pages/Admin/widgets-admin/widgets-admin.component';
 import { WiatingsAdminComponent } from './Pages/Admin/wiatings-admin/wiatings-admin.component';
@@ -45,6 +48,11 @@ import { RegisterationAdminComponent } from './Pages/Admin/registeration-admin/r
 import { OrderNewAdminComponent } from './Pages/Admin/order-new-admin/order-new-admin.component';
 import { ContactComponent } from './Pages/contact/contact.component';
 import { AboutOurCompanyComponent } from './Pages/about-our-company/about-our-company.component';
+=======
+import { HttpInterceptorService  } from './interceptor';
+import { QuickRegisterComponent } from './Auth/quick-register/quick-register.component';
+import { DashboardComponent } from './Admin/dashboard/dashboard.component';
+>>>>>>> 17edb1770aa17bfc7ce5d00ea3057a00747a29be
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -81,6 +89,7 @@ export function createTranslateLoader(http: HttpClient) {
     MyAppoimentRequestComponent,
     OppsComponent,
     CongratsComponent,
+<<<<<<< HEAD
     PaymentAdminComponent,
     WidgetsAdminComponent,
     WiatingsAdminComponent,
@@ -93,11 +102,18 @@ export function createTranslateLoader(http: HttpClient) {
     OrderNewAdminComponent,
     ContactComponent,
     AboutOurCompanyComponent
+=======
+    QuickRegisterComponent,
+    DashboardComponent,
+    
+>>>>>>> 17edb1770aa17bfc7ce5d00ea3057a00747a29be
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     TranslateModule.forRoot({
       defaultLanguage: 'en',
       loader: {

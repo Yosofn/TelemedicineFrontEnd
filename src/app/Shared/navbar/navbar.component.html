@@ -1,112 +1,132 @@
 <div class="container">
-<div class="navbar navbar-expand-md navbar-dark fixed-top bg-light">
-  <div class="mobile-responsive-nav">
-  <div class="container">
-  <div class="mobile-responsive-menu">
-  <div class="logo">
-  <a href="#">
-  <!-- <img src="assets/images/logo.png" class="main-logo" alt="logo">
-  <img src="assets/images/white-logo.png" class="white-logo" alt="logo"> -->
-  <span class="logo-tele">TeleMedicine</span>
-  </a>
-  </div>
-  </div>
-  </div>
-  </div>
-  <div class="desktop-nav">
-  <div class="container-fluid">
-  <nav class="navbar navbar-expand-md navbar-light">
-  <a class="navbar-brand" href="#">
-
-  <span class="logo-tele">{{"TeleMedicine" | translate}}</span>
-  </a>
-  <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-  <ul class="navbar-nav m-auto">
-  <li class="nav-item">
-  <a routerLink="/home" class="nav-link">
-  {{"HOME" | translate}}
-  </a>
-  </li>
-  <li class="nav-item">
-  <a routerLink="/Profiledoctor" class="nav-link">{{"Profiledoctor" | translate}}</a>
-  </li>
-  <li class="nav-item">
-  <a routerLink="/registerdoctor" class="nav-link">
-  {{"registerdoctor" | translate}}
-  </a>
-  </li>
-  <li class="nav-item">
-  <a  routerLink="/medicalreports"  class="nav-link">{{"medicalreports" | translate}}</a>
-  </li>
-  <li class="nav-item">
-    <div class="language">
-      <i class="fa-solid fa-circle-user"></i>
+  <div class="navbar navbar-expand-md navbar-dark fixed-top bg-light">
+    <div class="mobile-responsive-nav">
+    <div class="container">
+    <div class="mobile-responsive-menu">
+    <div class="logo">
+    <a href="#">
+    <!-- <img src="assets/images/logo.png" class="main-logo" alt="logo">
+    <img src="assets/images/white-logo.png" class="white-logo" alt="logo"> -->
+    <span class="logo-tele">TeleMedicine</span>
+    </a>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="desktop-nav">
+    <div class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand" href="#">
+  
+    <span class="logo-tele">{{"TeleMedicine" | translate}}</span>
+    </a>
+    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+    <ul class="navbar-nav m-auto">
+    <li class="nav-item">
+    <a routerLink="/home" class="nav-link">
+    {{"About" | translate}}
+    </a>
+    </li>
+  
+    <li class="nav-item">
       <ul class="p-0 m-0">
-          <li class="parent-lang">
-            <a href="javascript(void:0)" class="nav-link p-0 m-0">{{"MyAccount" | translate}}</a>
-            <ul class="change-lang links">
-              <li><a routerLink="/homedoctor" class="">{{"AcountDetails" | translate}}</a></li>
-              <li><a routerLink="/medicalradiology" class="">{{"medicalradiology" | translate}}</a></li>
-              <li><a routerLink="/meetourdoctors" class="">{{"meetourdoctors" | translate}}</a></li>
+        <li class="parent-lang">
+          <a href="javascript(void:0)" class="nav-link p-0 m-0">{{"Services" | translate}}</a>
+          <ul class="change-lang links">
+            <li><a routerLink="/meetourdoctors" class="">{{"Meet our doctors" | translate}}</a></li>
+
+            <li><a routerLink="/medicalanalysis" class="">{{"Medical Aalysis" | translate}}</a></li>
+            <li><a routerLink="/medicalradiology" class="">{{"Medical  Radiology" | translate}}</a></li>
+          </ul>
+        </li>
+    </ul>
+    </li>
+    <li class="nav-item">
+      <a routerLink="/registerdoctor" class="nav-link">
+      {{"Contact us" | translate}}
+      </a>
+      </li>
+   
+  
+  
+  
+      <li class="nav-item">
+        <a routerLink="/registerdoctor" class="nav-link">
+        {{"Join Our Team" | translate}}
+        </a>
+        </li>
+  
+        <li class="nav-item">
+          <div class="language">
+            <i class="fa-solid fa-circle-user"></i>
+            <ul class="p-0 m-0">
+                <li class="parent-lang">
+                  <a href="javascript(void:0)" class="nav-link p-0 m-0">{{"MyAccount" | translate}}</a>
+                  <ul class="change-lang links">
+                    <li><a routerLink="/Profile" class="">{{"Profile" | translate}}</a></li>
+  
+                    <li><a routerLink="/login" class="">{{"login" | translate}}</a></li>
+                    <li><a routerLink="/register" class="">{{"sign Up" | translate}}</a></li>
+                  </ul>
+                </li>
             </ul>
-          </li>
-      </ul>
-      </div>
-  </li>
-  </ul>
+            </div>
+        </li>
+    </ul>
+    <div class="others-options">
+    <ul>
+    <li>
+      <div class="language">
+        <i class="ri-global-line"></i>
+        <ul>
+            <li class="parent-lang">
+              <a href="javascript(void:0)">{{"Language" | translate}}</a>
+              <ul class="change-lang">
+                <li><button (click)="changeCurrentLang('en')">{{"English" | translate}}</button></li>
+                <li><button (click)="changeCurrentLang('ar')">{{"Arabic"  | translate}}</button></li>
+              </ul>
+            </li>
+        </ul>
+        </div>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </nav>
+    </div>
+    </div>
+    <div class="others-option-for-responsive">
+    <div class="container">
+    <div class="dot-menu">
+    <div class="inner">
+    <div class="circle circle-one"></div>
+    <div class="circle circle-two"></div>
+    <div class="circle circle-three"></div>
+    </div>
+    </div>
+    <div class="container">
+    <div class="option-inner">
+  <div class="others-options justify-content-center d-flex align-items-center">
   <div class="others-options">
   <ul>
   <li>
-    <div class="language">
-      <i class="ri-global-line"></i>
-      <ul>
-          <li class="parent-lang">
-            <a href="javascript(void:0)">{{"Language" | translate}}</a>
-            <ul class="change-lang">
-              <li><button (click)="changeCurrentLang('en')">{{"English" | translate}}</button></li>
-              <li><button (click)="changeCurrentLang('ar')">{{"Arabic"  | translate}}</button></li>
-            </ul>
-          </li>
-      </ul>
-      </div>
+  <div class="call-now">
+  <i class="flaticon-phone-call-1"></i>
+  <p>Call Now For Free</p>
+  <a href="tel:021-6523-3652">021-6523-3652</a>
+  </div>
+  </li>
+  <li>
+  <a href="appoinment.html" class="default-btn btn">Get A Free Quote</a>
   </li>
   </ul>
   </div>
   </div>
-  </nav>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
   </div>
-  </div>
-  <div class="others-option-for-responsive">
-  <div class="container">
-  <div class="dot-menu">
-  <div class="inner">
-  <div class="circle circle-one"></div>
-  <div class="circle circle-two"></div>
-  <div class="circle circle-three"></div>
-  </div>
-  </div>
-  <div class="container">
-  <div class="option-inner">
-<div class="others-options justify-content-center d-flex align-items-center">
-<div class="others-options">
-<ul>
-<li>
-<div class="call-now">
-<i class="flaticon-phone-call-1"></i>
-<p>Call Now For Free</p>
-<a href="tel:021-6523-3652">021-6523-3652</a>
-</div>
-</li>
-<li>
-<a href="appoinment.html" class="default-btn btn">Get A Free Quote</a>
-</li>
-</ul>
-</div>
-</div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-</div>
-
+  
+  

@@ -22,6 +22,14 @@ import { AppoimentListComponent } from './Pages/appoiment-list/appoiment-list.co
 import { MyAppoimentRequestComponent } from './Pages/my-appoiment-request/my-appoiment-request.component';
 import { CongratsComponent } from './Pages/Modals/congrats/congrats.component';
 import { OppsComponent } from './Pages/Modals/opps/opps.component';
+import { PaymentAdminComponent } from './Pages/Admin/payment-admin/payment-admin.component';
+import { WidgetsAdminComponent } from './Pages/Admin/widgets-admin/widgets-admin.component';
+import { WiatingsAdminComponent } from './Pages/Admin/wiatings-admin/wiatings-admin.component';
+import { AdminProfileComponent } from './Pages/Admin/admin-profile/admin-profile.component';
+import { RegisterationAdminComponent } from './Pages/Admin/registeration-admin/registeration-admin.component';
+import { OrderNewAdminComponent } from './Pages/Admin/order-new-admin/order-new-admin.component';
+import { ContactComponent } from './Pages/contact/contact.component';
+import { AboutOurCompanyComponent } from './Pages/about-our-company/about-our-company.component';
 
 const routes: Routes = [
   {path:'' , redirectTo:"home", pathMatch:"full"},
@@ -47,7 +55,14 @@ const routes: Routes = [
   {path:'homedoctor' , component: DoctordetailsComponent},
   {path:'congrats' , component: CongratsComponent},
   {path:'opps' , component: OppsComponent},
-  {path:'app-my-appoiment-request' , component:MyAppoimentRequestComponent},
+  {path:'payment-admin' , component:PaymentAdminComponent},
+  {path:'payment-Widjet' , component:WidgetsAdminComponent},
+  {path:'payment-waitng' , component:WiatingsAdminComponent},
+  {path:'admin-profile' , component:AdminProfileComponent},
+  {path:'admin-order-new' , component:OrderNewAdminComponent},
+  {path:'admin-register' , component:RegisterationAdminComponent},
+  {path:'contacts' , component:ContactComponent},
+  {path:'about-our-company' , component:AboutOurCompanyComponent},
 ];
 
 @NgModule({

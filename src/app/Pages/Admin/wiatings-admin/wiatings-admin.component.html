@@ -1,117 +1,115 @@
 <div class="payment-admin waiting my-5">
-    <h3>Welcome Admin </h3>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="box active">
-                <h3>All Doctors</h3>
+  <h3>Welcome Admin</h3>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="box active">
+        <h3 (click)="toggleDoctors()">Our Doctors</h3>
+      </div>
+      <div [hidden]="!ourDoctors" class="box-doctor">
+        <div class="top">
+          <div class="img">
+            <img src="assets/images/dr01.png" alt="" />
+          </div>
+          <div class="content">
+            <div class="name">
+              Dr. Marcus Horizon
+              <br />
+              Chardiologist
             </div>
-            <div class="box-doctor">
-                <div class="top">
-                    <div class="img">
-                        <img src="assets/images/dr01.png" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="name">
-                            Dr. Marcus Horizon
-                            <br>
-                            Chardiologist
-                        </div>
-                        <div class="rate">
-                            <img src="assets/images/star.png" alt="">
-                            <img src="assets/images/star.png" alt="">
-                            <img src="assets/images/star.png" alt="">
-                            <img src="assets/images/star.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="actions">
-                    <button class="active">Confirm</button>
-                    <button class="">Refuse </button>
-                </div>
+            <div class="rate">
+              <img src="assets/images/star.png" alt="" />
+              <img src="assets/images/star.png" alt="" />
+              <img src="assets/images/star.png" alt="" />
+              <img src="assets/images/star.png" alt="" />
             </div>
+          </div>
         </div>
-        <div class="col-md-6">
-            <div class="box">
-                <h3>All Doctors</h3>
-            </div>
-            <div class="box-doctor">
-                <div class="top">
-                    <div class="img">
-                        <img src="assets/images/dr01.png" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="name">
-                            Dr. Marcus Horizon
-                            <br>
-                            Chardiologist
-                        </div>
-                        <div class="rate">
-                            <img src="assets/images/star.png" alt="">
-                            <img src="assets/images/star.png" alt="">
-                            <img src="assets/images/star.png" alt="">
-                            <img src="assets/images/star.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="actions">
-                    <button class="active">Confirm</button>
-                    <button class="">Refuse </button>
-                </div>
-            </div>
+        <div class="actions">
+          <button class="bg-danger text-white border-0">Remove</button>
         </div>
+      </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="box-doctor">
-                <div class="top">
-                    <div class="img">
-                        <img src="assets/images/dr01.png" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="name">
-                            Dr. Marcus Horizon
-                            <br>
-                            Chardiologist
-                        </div>
-                        <div class="rate">
-                            <img src="assets/images/star.png" alt="">
-                            <img src="assets/images/star.png" alt="">
-                            <img src="assets/images/star.png" alt="">
-                            <img src="assets/images/star.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="actions">
-                    <button class="active">Confirm</button>
-                    <button class="">Refuse </button>
-                </div>
+    <div class="col-md-6">
+      <div class="box active">
+        <h3 (click)="toggleWaiting()">Waiting List</h3>
+      </div>
+      <div [hidden]="!ourDoctors" class="box-doctor">
+        <div class="top">
+          <div class="img">
+            <img src="assets/images/dr01.png" alt="" />
+          </div>
+          <div class="content">
+            <div class="name">
+              Dr. Marcus Horizon
+              <br />
+              Chardiologist
             </div>
-        </div>
-        <div class="col-md-6">
-            <div class="box-doctor">
-                <div class="top">
-                    <div class="img">
-                        <img src="assets/images/dr01.png" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="name">
-                            Dr. Marcus Horizon
-                            <br>
-                            Chardiologist
-                        </div>
-                        <div class="rate">
-                            <img src="assets/images/star.png" alt="">
-                            <img src="assets/images/star.png" alt="">
-                            <img src="assets/images/star.png" alt="">
-                            <img src="assets/images/star.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="actions">
-                    <button class="active">Confirm</button>
-                    <button class="">Refuse </button>
-                </div>
+            <div class="rate">
+              <img src="assets/images/star.png" alt="" />
+              <img src="assets/images/star.png" alt="" />
+              <img src="assets/images/star.png" alt="" />
+              <img src="assets/images/star.png" alt="" />
             </div>
+          </div>
         </div>
+        <div class="actions">
+          <button class="bg-danger text-white border-0">Remove</button>
+        </div>
+      </div>
     </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div [hidden]="!waiting" class="box-doctor">
+        <div class="top">
+          <div class="img">
+            <img src="assets/images/dr01.png" alt="" />
+          </div>
+          <div class="content">
+            <div class="name">
+              Dr. Marcus Horizon
+              <br />
+              Chardiologist
+            </div>
+            <!-- <div class="rate">
+              <img src="assets/images/star.png" alt="" />
+              <img src="assets/images/star.png" alt="" />
+              <img src="assets/images/star.png" alt="" />
+              <img src="assets/images/star.png" alt="" />
+            </div> -->
+          </div>
+        </div>
+        <div class="actions">
+          <button class="active">Confirm</button>
+          <button class="">Refuse</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div [hidden]="!waiting" class="box-doctor">
+        <div class="top">
+          <div class="img">
+            <img src="assets/images/dr01.png" alt="" />
+          </div>
+          <div class="content">
+            <div class="name">
+              Dr. Marcus Horizon
+              <br />
+              Chardiologist
+            </div>
+            <!-- <div class="rate">
+              <img src="assets/images/star.png" alt="" />
+              <img src="assets/images/star.png" alt="" />
+              <img src="assets/images/star.png" alt="" />
+              <img src="assets/images/star.png" alt="" />
+            </div> -->
+          </div>
+        </div>
+        <div class="actions">
+          <button class="active">Confirm</button>
+          <button class="">Refuse</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

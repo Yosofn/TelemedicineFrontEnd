@@ -1,61 +1,67 @@
 <div class="payment-admin my-5">
-    <h3>Welcome Admin </h3>
-    <div class="box-top">Payment Receipt</div>
-    <div class="content">
-        <div class="boxes-left">
-            <div class="box">
-                <div class="img">
-                    <img src="assets/images/dr01.png" alt="">
-                </div>
-                <div class="content-box">
-                    <p class="name">Ahmed Kamel</p>
-                    <label for="upLoad" class="upLoad">
-                        Photos Uploaded 
-                        <input type="file" class="d-none" id="upLoad">
-                    </label>
-                    <div class="date">Mar 1, 2023 | 15:00 PM</div>
-                    <div class="cost">Cost: 40$</div>
-                    <div class="actions">
-                        <div class="left">
-                            <i class="fas fa-check"></i>
-                        </div>
-                        <div class="center">Patient Profile</div>
-                        <div class="right">
-                            <i class="fas fa-times"></i>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="box">
-                <div class="img">
-                    <img src="assets/images/dr01.png" alt="">
-                </div>
-                <div class="content-box">
-                    <p class="name">Ahmed Kamel</p>
-                    <label for="upLoad" class="upLoad">
-                        Photos Uploaded 
-                        <input type="file" class="d-none" id="upLoad">
-                    </label>
-                    <div class="date">Mar 1, 2023 | 15:00 PM</div>
-                    <div class="cost">Cost: 40$</div>
-                    <div class="actions">
-                        <div class="left">
-                            <i class="fas fa-check"></i>
-                        </div>
-                        <div class="center">Patient Profile</div>
-                        <div class="right">
-                            <i class="fas fa-times"></i>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+  <h3>Welcome Admin</h3>
+  <div class="box-top">Payment Receipt</div>
+  <div class="content">
+    <div class="boxes-left">
+      <div class="box">
+        <div class="img">
+          <img
+            routerLink="/admin-profile"
+            src="assets/images/dr01.png"
+            alt=""
+          />
         </div>
-        <div class="right">
-            <div class="img-rayes">
-                <img src="assets/images/Rectangle1295.png" alt="">
+        <div class="content-box">
+          <p routerLink="/admin-profile" class="name">Ahmed Kamel</p>
+          <label (click)="toggle()" for="upLoad" class="upLoad">
+            Photos Uploaded
+            <!-- <input type="file" class="d-none" id="upLoad" /> -->
+          </label>
+          <div class="date">Mar 1, 2023 | 15:00 PM</div>
+          <div class="cost">Cost: 40$</div>
+          <div class="actions">
+            <div class="left">
+              <i class="fas fa-check"></i>
             </div>
+            <div class="center">Patient Profile</div>
+            <div class="right">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="box">
+        <div class="img">
+          <img
+            routerLink="/Profiledoctor"
+            src="assets/images/dr01.png"
+            alt=""
+          />
+        </div>
+        <div class="content-box">
+          <p routerLink="/Profiledoctor" class="name">Ahmed Kamel</p>
+          <label (click)="toggle()" for="upLoad" class="upLoad">
+            Photos Uploaded
+            <!-- <input type="file" class="d-none" id="upLoad" /> -->
+          </label>
+          <div class="date">Mar 1, 2023 | 15:00 PM</div>
+          <div class="cost">Cost: 40$</div>
+          <div class="actions">
+            <div class="left">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="center">Patient Profile</div>
+            <div class="right">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="right">
+      <div class="img-rayes">
+        <img [hidden]="!toggleImage" src="assets/images/receipt.jpg" alt="" />
+      </div>
+    </div>
+  </div>
 </div>

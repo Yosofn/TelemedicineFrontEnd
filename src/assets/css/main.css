@@ -5600,7 +5600,7 @@ font-size: 35px;
 color:#606060;
 }
 .tabs-profile ul.nav li button.active i{
-  color: #ef3e4f;
+  color: #0cb8b6;
 }
 
 .logout-content{
@@ -5869,7 +5869,7 @@ width: 100%
     color: #606060;
 }
 .tabs-profile ul.nav li button.active p{
-  color: #ef3e4f;
+  color: #606060;
 }
 
 
@@ -6374,8 +6374,8 @@ margin: 0
   box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   width: 400px;
-  margin: 50px auto;
-  padding: 40px;
+  margin: 30px auto;
+  padding: 30px;
   text-align: center;
   font-weight: 600;
 }
@@ -6421,7 +6421,7 @@ gap: 20px;
 .payment-admin .content .boxes-left .box .content-box .name{
   font-weight: 600;
   font-size: 22px;
-  color: #101623;    
+  color: #101623;
   margin: 0;
 }
 .payment-admin .content .boxes-left .box .content-box .date,
@@ -6477,7 +6477,7 @@ gap: 20px;
 
 
 .payment-admin.waiting{
-  
+
 }
 .payment-admin.waiting .box{
   background: #FFFFFF;

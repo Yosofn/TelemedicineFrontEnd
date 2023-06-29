@@ -30,8 +30,9 @@ import { RegisterationAdminComponent } from './Pages/Admin/registeration-admin/r
 import { OrderNewAdminComponent } from './Pages/Admin/order-new-admin/order-new-admin.component';
 import { ContactComponent } from './Pages/contact/contact.component';
 import { AboutOurCompanyComponent } from './Pages/about-our-company/about-our-company.component';
-import { DashboardComponent } from './Admin/dashboard/dashboard.component';
-import { QuickRegisterComponent } from './Auth/quick-register/quick-register.component';
+
+
+
 
 const routes: Routes = [
   {path:'' , redirectTo:"home", pathMatch:"full"},
@@ -57,14 +58,15 @@ const routes: Routes = [
   {path:'homedoctor' , component: DoctordetailsComponent},
   {path:'congrats' , component: CongratsComponent},
   {path:'opps' , component: OppsComponent},
+  {path:'contacts' , component:ContactComponent},
+  {path:'about-our-company' , component:AboutOurCompanyComponent},
+  //Admin
   {path:'payment-admin' , component:PaymentAdminComponent},
   {path:'payment-Widjet' , component:WidgetsAdminComponent},
   {path:'payment-waitng' , component:WiatingsAdminComponent},
   {path:'admin-profile' , component:AdminProfileComponent},
   {path:'admin-order-new' , component:OrderNewAdminComponent},
   {path:'admin-register' , component:RegisterationAdminComponent},
-  {path:'contacts' , component:ContactComponent},
-  {path:'about-our-company' , component:AboutOurCompanyComponent},
   {path:'app-my-appoiment-request' , component:MyAppoimentRequestComponent},
 
 

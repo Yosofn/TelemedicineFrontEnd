@@ -78,12 +78,15 @@ this.getUserData(this.userdata);
        Navigation(role:any){
 
         switch(role){
-
-      case "3":
-       this._Router.navigate(['/dashboard']);
+          
+      case "2":
+        this._Router.navigate(['/homedoctor']);
+        break;
+       case "3":
+       this._Router.navigate(['/admin-register']);
        break;
        case "4":
-        this._Router.navigate(['/qickregister']);
+        this._Router.navigate(['/admin-register']);
         break;
         default:
         this._Router.navigate(['/home']);

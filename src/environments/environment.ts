@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url: 'http://yousof123-001-site1.itempurl.com/api/'
+  url: 'http://yousefalnajar123-001-site1.ctempurl.com/api/'
 
 };
 

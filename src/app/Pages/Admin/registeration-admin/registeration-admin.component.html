@@ -3,7 +3,7 @@
   <div class="box" style="width: 25%; padding: 10px; margin: 20px auto">
     <h3>Quick Registration</h3>
   </div>
-
+ <form (ngSubmit)="SumbitApplication(_quickRegister)">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -16,6 +16,7 @@
                 class="form-control"
                 style="border-width: 2px"
                 placeholder="User Name"
+                [(ngModel)]="_quickRegister.username" name="username"
               />
             </div>
           </div>
@@ -27,6 +28,7 @@
                 class="form-control"
                 style="border-width: 2px"
                 placeholder="Phone Number"
+                type="text" [(ngModel)]="_quickRegister.phone" name="phone"
               />
             </div>
           </div>
@@ -38,6 +40,7 @@
                 class="form-control"
                 style="border-width: 2px"
                 placeholder="National ID"
+                type="text" [(ngModel)]="_quickRegister.nationalId" name="nationalId"
               />
             </div>
           </div>
@@ -51,12 +54,33 @@
                 Upload File
                 <i class="fa-solid fa-folder-plus"></i>
               </p>
-              <input type="file" id="fileTreatment" class="d-none" />
+              <input type="file" [(ngModel)]="_quickRegister.report" name="report" (change)="onFileSelected($event)">
+
             </label>
           </div>
-          <div class="confirm-register">Confirm</div>
+          <button type="submit" class="confirm-register">Confirm</button>
         </div>
       </div>
     </div>
+  </div>
+</form>
+</div>
+
+<div class="container" *ngIf="showPopup">
+  <div class="bg-payments-header mb-5">
+    <img src="assets/images/header.png" alt="">
+  </div>
+
+  <div class="content-succ my-5">
+    <div class="icon">
+      <i class="fa-solid fa-check"></i>
+    </div>
+    <span>Congratulations</span>
+    <p>Appointment successfully booked.</p>
+  <div class="row">
+    <div class="col-12 d-flex justify-content-end">
+      <a class="btn btn-next" routerLink="/admin-register">Back to quick register page!</a>
+    </div>
+  </div>
   </div>
 </div>

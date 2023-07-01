@@ -11,6 +11,7 @@ export class QuickRegisterComponent implements OnInit {
     nationalId: 0,
     username: "",
     phone: "",
+profilepicture:""
 
   }
 

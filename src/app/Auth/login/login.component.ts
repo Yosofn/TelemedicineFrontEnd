@@ -83,7 +83,7 @@ this.getUserData(this.userdata);
         this._Router.navigate(['/homedoctor']);
         break;
        case "3":
-       this._Router.navigate(['/admin-register']);
+       this._Router.navigate(['/payment-Widjet']);
        break;
        case "4":
         this._Router.navigate(['/admin-register']);

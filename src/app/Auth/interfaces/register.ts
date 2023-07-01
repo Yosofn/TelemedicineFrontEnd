@@ -43,7 +43,8 @@ export interface quickRegister {
   nationalId: 0,
   username: "",
   phone: "",
-
+  deviceNumber: 0,
+  report:string | null;
 
 }
 

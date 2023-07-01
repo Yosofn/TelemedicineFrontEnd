@@ -49,7 +49,6 @@ import { ContactComponent } from './Pages/contact/contact.component';
 import { AboutOurCompanyComponent } from './Pages/about-our-company/about-our-company.component';
 
 import { HttpInterceptorService  } from './interceptor';
-import { QuickRegisterComponent } from './Auth/quick-register/quick-register.component';
 import { DashboardComponent } from './Admin/dashboard/dashboard.component';
 
 export function createTranslateLoader(http: HttpClient) {
@@ -99,7 +98,6 @@ export function createTranslateLoader(http: HttpClient) {
     OrderNewAdminComponent,
     ContactComponent,
     AboutOurCompanyComponent,
-    QuickRegisterComponent,
     DashboardComponent,
   
   ],
